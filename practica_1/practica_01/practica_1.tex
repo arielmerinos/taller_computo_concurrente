@@ -1,0 +1,83 @@
+\documentclass[letterpaper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish, mexico]{babel}
+\usepackage{amssymb, amsmath}
+\usepackage{graphicx}
+\usepackage[margin=1.5cm,
+vmargin={1.5cm,0.7cm},
+includefoot]{geometry}
+\usepackage{amsthm}
+\usepackage{dsfont}
+\usepackage{mathtools}
+\usepackage{graphicx}
+
+\providecommand{\abs}[1]{\left|#1\right|}
+
+\newtheorem*{remark}{Recuerde}
+
+\newcommand{\tq}{ \quad \cdot  \backepsilon \cdot \quad }
+
+\newcommand{\R}{\mathds{R}}
+
+\renewcommand{\*}{\cdot}
+
+\newtheorem{theorem}{Teorema}[]
+\theoremstyle{definition}
+\newtheorem{definition}{Definición}
+
+\begin{document}
+	
+	\setlength{\unitlength}{1cm}
+	\thispagestyle{empty}
+	\begin{picture}(19,3)
+		\put(-0.5,1.2){\includegraphics[scale=.20]{img/unam1.png}}
+		\put(16,1){\includegraphics[scale=.29]{img/fciencias1.png}}
+	\end{picture}
+	
+	\begin{center}
+		\vspace{-114pt}
+		\textbf{\large Computación concurrente}\\
+		\textbf{ Semestre 2024-1}\\
+		Prof. Pedro Porras Flores\\
+		Ayud. Irving Hernández Rosas \\
+		\textbf{Tarea Examen III}\\[0.15cm]
+		Kevin Ariel Merino Peña\footnote{Número de cuenta 317031326} Armando Abraham Aquino Chapa\footnote{Número de cuenta 317058163}
+		José Manuel Pedro Méndez\footnote{Número de cuenta 315073120}\\ [0.12cm]
+		\today
+	\end{center}
+	\vspace{-10pt}
+	\rule{19cm}{0.3mm}
+	
+	\noindent \textbf{Instrucciones:} Realice las siguientes ejercicios escribiéndolos  de manera clara, los puede realizar en \LaTeX, en un cuaderno etc, pero debe de subir el archivo en la sesión de classrroom en formato pdf para su revisión.
+	
+	%\section*{La integral}
+		
+		% -----------------------------------------------------
+		% Problema uno
+		% -----------------------------------------------------
+		
+		
+		\section*{Métodos de integración}
+		
+		\subsection*{Integración por partes (2.5 pts.)}
+		\item Realice las siguientes integrales:
+		\begin{enumerate}
+			\item$\displaystyle \int x \sin(x) \, dx$
+			\begin{align*}
+				f &= x & df &= dx\\
+				g &= -\cos(x) & dg &= \sin(x)dx
+			\end{align*}
+			\begin{align*}
+				&= f \* g - \int g\*df &&\text{Empleando integración por partes}\\
+				&= x(-\cos(x)) - \int -\cos(x)dx &&\text{Reemplazando con los valores elegidos}\\
+				&= -x\cos(x) + \int \cos(x)dx &&\text{Porque la integral es un operador lineal}\\
+				&= -x\cos(x) + \sin(x) &&\text{La integral de }\cos(x) = \sin(x)
+			\end{align*}
+			\[ \therefore \int x \sin(x) \, dx = \sin(x) - x\cos(x) + C, C \in \R  \]
+
+	\end{enumerate}
+	
+	
+	
+	
+\end{document}
