@@ -81,8 +81,8 @@ class ConcurrentMatrixMultiplication {
     }
 
     public static void main(String[] args) throws IOException, InterruptedException, ExecutionException {
-        int[][] A = readMatrixFromFile("/Users/arielmerino/Documents/concurrente/taller_computo_concurrente/practica_1/practica_01/resources/matrix1000.txt");
-        int[][] B = readMatrixFromFile("/Users/arielmerino/Documents/concurrente/taller_computo_concurrente/practica_1/practica_01/resources/matrix1000.txt");
+        int[][] A = readMatrixFromFile("matrix1000.txt");
+        int[][] B = readMatrixFromFile("matrix1000.txt");
 
         long startTime = System.nanoTime();
         int[][] C = multiplyConcurrently(A, B);
@@ -147,8 +147,8 @@ class MatrixMultiplicationSequential {
 
     public static void main(String[] args) throws IOException {
 
-        int[][] A = readMatrixFromFile("/Users/arielmerino/Documents/concurrente/taller_computo_concurrente/practica_1/practica_01/resources/matrix1000.txt");
-        int[][] B = readMatrixFromFile("/Users/arielmerino/Documents/concurrente/taller_computo_concurrente/practica_1/practica_01/resources/matrix1000.txt");
+        int[][] A = readMatrixFromFile("resources/matrix1000.txt");
+        int[][] B = readMatrixFromFile("resources/matrix1000.txt");
 
         long startTime = System.nanoTime();
         int[][] C = multiply(A, B);

@@ -69,11 +69,11 @@ public class Matrices {
         int choice1 = scanner.nextInt();
         String fileName = "";
         if (choice1 == 1) {
-            fileName = "practica_1/practica_01/resources/matrix10.txt";
+            fileName = "resources/matrix10.txt";
         } else if (choice1 == 2) {
-            fileName = "practica_1/practica_01/resources/matrix100.txt";
+            fileName = "resources/matrix100.txt";
         } else if (choice1 == 3){
-            fileName = "practica_1/practica_01/resources/matrix1000.txt";
+            fileName = "resources/matrix1000.txt";
 
         }
 
