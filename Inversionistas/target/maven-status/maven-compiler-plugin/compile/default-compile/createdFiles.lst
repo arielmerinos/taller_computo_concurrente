@@ -1,0 +1,9 @@
+kas/concurrente/tenedor/Tenedor.class
+kas/concurrente/candados/Semaphore.class
+kas/concurrente/Main.class
+kas/concurrente/candados/Lock.class
+kas/concurrente/candadosImpl/Filtro.class
+kas/concurrente/tenedor/TenedorImpl.class
+kas/concurrente/inversionista/InversionistaFiltro.class
+kas/concurrente/candadosImpl/PetersonLock.class
+kas/concurrente/inversionista/Inversionista.class

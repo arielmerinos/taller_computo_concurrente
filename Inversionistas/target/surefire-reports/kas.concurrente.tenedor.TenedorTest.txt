@@ -1,0 +1,5 @@
+-------------------------------------------------------------------------------
+Test set: kas.concurrente.tenedor.TenedorTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 s - in kas.concurrente.tenedor.TenedorTest
+tenedorTest  Time elapsed: 0.008 s
