@@ -1,17 +1,18 @@
 package kas.concurrente;
 
+import java.util.concurrent.atomic.AtomicBoolean;
+
 public class TASLock implements Lock {
+    AtomicBoolean state = new AtomicBoolean(false);
 
     @Override
     public void lock() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'lock'");
+        while (state.getAndSet(true)) {} // Bucle hasta obtener el bloqueo
     }
 
     @Override
     public void unlock() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'unlock'");
+        state.set(false); // Libera el bloqueo
     }
     
 }
