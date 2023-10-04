@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="kas.concurrente.candados.PetersonLockTest" time="0.053" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="kas.concurrente.candados.PetersonLockTest" time="0.073" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="20"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
-    <property name="java.class.path" value="/Users/arielmerino/Documents/concurrente/Inversionistas/target/test-classes:/Users/arielmerino/Documents/concurrente/Inversionistas/target/classes:/Users/arielmerino/.m2/repository/org/junit/jupiter/junit-jupiter/5.5.1/junit-jupiter-5.5.1.jar:/Users/arielmerino/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.5.1/junit-jupiter-api-5.5.1.jar:/Users/arielmerino/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/Users/arielmerino/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/arielmerino/.m2/repository/org/junit/platform/junit-platform-commons/1.5.1/junit-platform-commons-1.5.1.jar:/Users/arielmerino/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.5.1/junit-jupiter-params-5.5.1.jar:/Users/arielmerino/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.5.1/junit-jupiter-engine-5.5.1.jar:/Users/arielmerino/.m2/repository/org/junit/platform/junit-platform-engine/1.5.1/junit-platform-engine-1.5.1.jar:"/>
+    <property name="java.class.path" value="/Users/arielmerino/Documents/concurrente/taller_computo_concurrente/Inversionistas/target/test-classes:/Users/arielmerino/Documents/concurrente/taller_computo_concurrente/Inversionistas/target/classes:/Users/arielmerino/.m2/repository/org/junit/jupiter/junit-jupiter/5.5.1/junit-jupiter-5.5.1.jar:/Users/arielmerino/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.5.1/junit-jupiter-api-5.5.1.jar:/Users/arielmerino/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/Users/arielmerino/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/arielmerino/.m2/repository/org/junit/platform/junit-platform-commons/1.5.1/junit-platform-commons-1.5.1.jar:/Users/arielmerino/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.5.1/junit-jupiter-params-5.5.1.jar:/Users/arielmerino/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.5.1/junit-jupiter-engine-5.5.1.jar:/Users/arielmerino/.m2/repository/org/junit/platform/junit-platform-engine/1.5.1/junit-platform-engine-1.5.1.jar:"/>
     <property name="java.vm.vendor" value="Homebrew"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.vendor.url" value="https://github.com/Homebrew/homebrew-core/issues"/>
@@ -12,10 +12,10 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="MX"/>
     <property name="sun.boot.library.path" value="/opt/homebrew/Cellar/openjdk/20.0.2/libexec/openjdk.jdk/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/arielmerino/Documents/concurrente/Inversionistas/target/surefire/surefirebooter2901581536654865957.jar /Users/arielmerino/Documents/concurrente/Inversionistas/target/surefire 2023-09-16T23-21-13_642-jvmRun1 surefire5348332447222531907tmp surefire_07381264440991557988tmp"/>
+    <property name="sun.java.command" value="/Users/arielmerino/Documents/concurrente/taller_computo_concurrente/Inversionistas/target/surefire/surefirebooter9397159707418998330.jar /Users/arielmerino/Documents/concurrente/taller_computo_concurrente/Inversionistas/target/surefire 2023-09-23T23-32-38_729-jvmRun1 surefire5414185454399678520tmp surefire_014315055576611785484tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
-    <property name="surefire.test.class.path" value="/Users/arielmerino/Documents/concurrente/Inversionistas/target/test-classes:/Users/arielmerino/Documents/concurrente/Inversionistas/target/classes:/Users/arielmerino/.m2/repository/org/junit/jupiter/junit-jupiter/5.5.1/junit-jupiter-5.5.1.jar:/Users/arielmerino/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.5.1/junit-jupiter-api-5.5.1.jar:/Users/arielmerino/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/Users/arielmerino/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/arielmerino/.m2/repository/org/junit/platform/junit-platform-commons/1.5.1/junit-platform-commons-1.5.1.jar:/Users/arielmerino/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.5.1/junit-jupiter-params-5.5.1.jar:/Users/arielmerino/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.5.1/junit-jupiter-engine-5.5.1.jar:/Users/arielmerino/.m2/repository/org/junit/platform/junit-platform-engine/1.5.1/junit-platform-engine-1.5.1.jar:"/>
+    <property name="surefire.test.class.path" value="/Users/arielmerino/Documents/concurrente/taller_computo_concurrente/Inversionistas/target/test-classes:/Users/arielmerino/Documents/concurrente/taller_computo_concurrente/Inversionistas/target/classes:/Users/arielmerino/.m2/repository/org/junit/jupiter/junit-jupiter/5.5.1/junit-jupiter-5.5.1.jar:/Users/arielmerino/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.5.1/junit-jupiter-api-5.5.1.jar:/Users/arielmerino/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/Users/arielmerino/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/arielmerino/.m2/repository/org/junit/platform/junit-platform-commons/1.5.1/junit-platform-commons-1.5.1.jar:/Users/arielmerino/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.5.1/junit-jupiter-params-5.5.1.jar:/Users/arielmerino/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.5.1/junit-jupiter-engine-5.5.1.jar:/Users/arielmerino/.m2/repository/org/junit/platform/junit-platform-engine/1.5.1/junit-platform-engine-1.5.1.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="/Users/arielmerino"/>
     <property name="user.language" value="en"/>
@@ -23,13 +23,13 @@
     <property name="java.version.date" value="2023-07-18"/>
     <property name="java.home" value="/opt/homebrew/Cellar/openjdk/20.0.2/libexec/openjdk.jdk/Contents/Home"/>
     <property name="file.separator" value="/"/>
-    <property name="basedir" value="/Users/arielmerino/Documents/concurrente/Inversionistas"/>
+    <property name="basedir" value="/Users/arielmerino/Documents/concurrente/taller_computo_concurrente/Inversionistas"/>
     <property name="java.vm.compressedOopsMode" value="Zero based"/>
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="apple.awt.application.name" value="ForkedBooter"/>
-    <property name="surefire.real.class.path" value="/Users/arielmerino/Documents/concurrente/Inversionistas/target/surefire/surefirebooter2901581536654865957.jar"/>
+    <property name="surefire.real.class.path" value="/Users/arielmerino/Documents/concurrente/taller_computo_concurrente/Inversionistas/target/surefire/surefirebooter9397159707418998330.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.runtime.version" value="20.0.2"/>
@@ -45,7 +45,7 @@
     <property name="java.vendor.url.bug" value="https://github.com/Homebrew/homebrew-core/issues"/>
     <property name="java.io.tmpdir" value="/var/folders/8l/_6zvs4ns7tn5688jct_738900000gn/T/"/>
     <property name="java.version" value="20.0.2"/>
-    <property name="user.dir" value="/Users/arielmerino/Documents/concurrente/Inversionistas"/>
+    <property name="user.dir" value="/Users/arielmerino/Documents/concurrente/taller_computo_concurrente/Inversionistas"/>
     <property name="os.arch" value="aarch64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="native.encoding" value="UTF-8"/>
@@ -58,5 +58,5 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.class.version" value="64.0"/>
   </properties>
-  <testcase name="lockTest" classname="kas.concurrente.candados.PetersonLockTest" time="0.053"/>
+  <testcase name="lockTest" classname="kas.concurrente.candados.PetersonLockTest" time="0.073"/>
 </testsuite>

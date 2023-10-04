@@ -1,5 +1,5 @@
-kas/concurrente/candados/PetersonLockTest.class
 kas/concurrente/MesaTest.class
+kas/concurrente/candados/PetersonLockTest.class
 kas/concurrente/candados/SemaphoreTest.class
 kas/concurrente/candados/Counter.class
 kas/concurrente/tenedor/TenedorTest.class
