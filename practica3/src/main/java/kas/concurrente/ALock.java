@@ -1,36 +1,42 @@
 package kas.concurrente;
 
 import java.util.concurrent.atomic.AtomicInteger;
+import java.util.concurrent.atomic.AtomicBoolean;
 
-public class ALock implements Lock{
+public class ALock implements Lock {
     ThreadLocal<Integer> mySlotIndex = new ThreadLocal<Integer>() {
         protected Integer initialValue() {
             return 0;
         }
     };
 
-    AtomicInteger tail;
-    volatile boolean[] flag;
-    int size;
+    private final int size;
+    private final AtomicInteger tail = new AtomicInteger(0);
+    private final AtomicBoolean[] flags;
 
     public ALock(int capacity) {
         size = capacity;
-        tail = new AtomicInteger(0);
-        flag = new boolean[capacity];
-        flag[0] = true;
+        flags = new AtomicBoolean[capacity];
+        for (int i = 0; i < capacity; i++) {
+            flags[i] = new AtomicBoolean();
+        }
+        flags[0].set(true);
     }
 
     @Override
     public void lock() {
         int slot = tail.getAndIncrement() % size;
         mySlotIndex.set(slot);
-        while (!flag[slot]) {}
+
+        while (!flags[slot].get()) {
+            Thread.yield();
+        }
     }
 
     @Override
     public void unlock() {
         int slot = mySlotIndex.get();
-        flag[slot] = false;
-        flag[(slot + 1) % size] = true;
+        flags[slot].set(false);
+        flags[(slot + 1) % size].set(true);
     }
 }

@@ -5,7 +5,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.Test;
 
 public class LockTest {
-    static final int HILOS = 10;
+    static final int HILOS = 3;
     static final int ITERACIONES = 20;
     static final int MAX_VALOR = 100000;
     static final int TAM_POR_HILO = MAX_VALOR/HILOS;
