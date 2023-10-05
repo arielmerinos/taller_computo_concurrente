@@ -6,7 +6,7 @@ import java.util.concurrent.atomic.AtomicBoolean;
 public class BackoffLock implements Lock {
     private AtomicBoolean state = new AtomicBoolean(false);
     private static final int MIN_DELAY = 1;
-    private static final int MAX_DELAY = 1000; 
+    private static final int MAX_DELAY = 100; 
     
     private class Backoff {
         final int minDelay, maxDelay;

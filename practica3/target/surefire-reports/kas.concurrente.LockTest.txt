@@ -1,33 +1,21 @@
 -------------------------------------------------------------------------------
 Test set: kas.concurrente.LockTest
 -------------------------------------------------------------------------------
-Tests run: 6, Failures: 6, Errors: 0, Skipped: 0, Time elapsed: 0.05 s <<< FAILURE! - in kas.concurrente.LockTest
-tasLock  Time elapsed: 0.022 s  <<< FAILURE!
-org.opentest4j.AssertionFailedError: expected: <1000000> but was: <0>
-	at kas.concurrente.LockTest.ejecutaPrueba(LockTest.java:49)
-	at kas.concurrente.LockTest.tasLock(LockTest.java:56)
-
-ttasLock  Time elapsed: 0.006 s  <<< FAILURE!
-org.opentest4j.AssertionFailedError: expected: <1000000> but was: <0>
-	at kas.concurrente.LockTest.ejecutaPrueba(LockTest.java:49)
-	at kas.concurrente.LockTest.ttasLock(LockTest.java:62)
-
-backoffLock  Time elapsed: 0.003 s  <<< FAILURE!
-org.opentest4j.AssertionFailedError: expected: <1000000> but was: <0>
-	at kas.concurrente.LockTest.ejecutaPrueba(LockTest.java:49)
-	at kas.concurrente.LockTest.backoffLock(LockTest.java:68)
-
-aLock  Time elapsed: 0.002 s  <<< FAILURE!
+Tests run: 6, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 138.693 s <<< FAILURE! - in kas.concurrente.LockTest
+tasLock  Time elapsed: 55.137 s
+ttasLock  Time elapsed: 76.647 s
+backoffLock  Time elapsed: 6.874 s
+aLock  Time elapsed: 0.017 s  <<< FAILURE!
 org.opentest4j.AssertionFailedError: expected: <1000000> but was: <0>
 	at kas.concurrente.LockTest.ejecutaPrueba(LockTest.java:49)
 	at kas.concurrente.LockTest.aLock(LockTest.java:83)
 
-clhLock  Time elapsed: 0.005 s  <<< FAILURE!
+clhLock  Time elapsed: 0.01 s  <<< FAILURE!
 org.opentest4j.AssertionFailedError: expected: <1000000> but was: <0>
 	at kas.concurrente.LockTest.ejecutaPrueba(LockTest.java:49)
 	at kas.concurrente.LockTest.clhLock(LockTest.java:73)
 
-mcsLock  Time elapsed: 0.004 s  <<< FAILURE!
+mcsLock  Time elapsed: 0.003 s  <<< FAILURE!
 org.opentest4j.AssertionFailedError: expected: <1000000> but was: <0>
 	at kas.concurrente.LockTest.ejecutaPrueba(LockTest.java:49)
 	at kas.concurrente.LockTest.mcsLock(LockTest.java:78)
