@@ -25,7 +25,6 @@ public class CLHLock implements Lock {
         myPred.set(pred);
 
         while (pred.locked) {
-            // Espera adaptativa (puedes ajustar esta parte)
             Thread.yield();
         }
     }
@@ -35,7 +34,6 @@ public class CLHLock implements Lock {
         QNode qnode = myNode.get();
         qnode.locked = false;
 
-        // Reinicializa myNode y hace que apunte al nodo predecesor
         myNode.set(myPred.get());
     }
 }
