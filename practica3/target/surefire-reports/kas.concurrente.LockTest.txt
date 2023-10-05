@@ -1,22 +1,14 @@
 -------------------------------------------------------------------------------
 Test set: kas.concurrente.LockTest
 -------------------------------------------------------------------------------
-Tests run: 6, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 138.693 s <<< FAILURE! - in kas.concurrente.LockTest
-tasLock  Time elapsed: 55.137 s
-ttasLock  Time elapsed: 76.647 s
-backoffLock  Time elapsed: 6.874 s
-aLock  Time elapsed: 0.017 s  <<< FAILURE!
-org.opentest4j.AssertionFailedError: expected: <1000000> but was: <0>
+Tests run: 6, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 257.699 s <<< FAILURE! - in kas.concurrente.LockTest
+tasLock  Time elapsed: 1.724 s
+ttasLock  Time elapsed: 0.689 s
+backoffLock  Time elapsed: 0.347 s
+aLock  Time elapsed: 0.704 s
+clhLock  Time elapsed: 118.55 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <100000> but was: <90001>
 	at kas.concurrente.LockTest.ejecutaPrueba(LockTest.java:49)
-	at kas.concurrente.LockTest.aLock(LockTest.java:83)
+	at kas.concurrente.LockTest.clhLock(LockTest.java:81)
 
-clhLock  Time elapsed: 0.01 s  <<< FAILURE!
-org.opentest4j.AssertionFailedError: expected: <1000000> but was: <0>
-	at kas.concurrente.LockTest.ejecutaPrueba(LockTest.java:49)
-	at kas.concurrente.LockTest.clhLock(LockTest.java:73)
-
-mcsLock  Time elapsed: 0.003 s  <<< FAILURE!
-org.opentest4j.AssertionFailedError: expected: <1000000> but was: <0>
-	at kas.concurrente.LockTest.ejecutaPrueba(LockTest.java:49)
-	at kas.concurrente.LockTest.mcsLock(LockTest.java:78)
-
+mcsLock  Time elapsed: 135.677 s
