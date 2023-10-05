@@ -1,5 +1,5 @@
 #surefire
-#Wed Oct 04 19:07:56 CST 2023
+#Thu Oct 05 00:17:42 CST 2023
 childDelegation=false
 classPathUrl.0=/Users/arielmerino/Documents/concurrente/taller_computo_concurrente/practica3/target/test-classes
 classPathUrl.1=/Users/arielmerino/Documents/concurrente/taller_computo_concurrente/practica3/target/classes
@@ -24,7 +24,7 @@ mainCliOptions0=LOGGING_LEVEL_ERROR
 mainCliOptions1=LOGGING_LEVEL_WARN
 mainCliOptions2=LOGGING_LEVEL_INFO
 mainCliOptions3=REACTOR_FAIL_FAST
-pluginPid=11670
+pluginPid=36899
 preferTestsFromInStream=false
 providerConfiguration=org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
 reportsDirectory=/Users/arielmerino/Documents/concurrente/taller_computo_concurrente/practica3/target/surefire-reports

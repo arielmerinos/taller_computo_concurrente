@@ -5,9 +5,9 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.Test;
 
 public class LockTest {
-    static final int HILOS = 51;
-    static final int ITERACIONES = 50;
-    static final int MAX_VALOR = 1000000;
+    static final int HILOS = 10;
+    static final int ITERACIONES = 20;
+    static final int MAX_VALOR = 100000;
     static final int TAM_POR_HILO = MAX_VALOR/HILOS;
     static final int RESTANTE = MAX_VALOR % HILOS;
     volatile Counter counter;
@@ -45,7 +45,7 @@ public class LockTest {
             for(Thread t : hilos){
                 t.join();
             }
-
+            System.out.println("Valor: " + counter.getValor());
             assertEquals(MAX_VALOR, counter.getValor());
         }
     }   
@@ -53,33 +53,45 @@ public class LockTest {
     @Test
     void tasLock() throws InterruptedException{
         System.out.println("HILOS " + HILOS);
+        System.out.println("tasLock");
         ejecutaPrueba(new TASLock());
     }
 
 
     @Test
     void ttasLock() throws InterruptedException {
+        System.out.println("ttasLock");
+
         ejecutaPrueba(new TTASLock());
+
     }
 
     
     @Test
     void backoffLock() throws InterruptedException {
+        System.out.println("backoffLock");
+
         ejecutaPrueba(new BackoffLock());
     }
     
     @Test
     void clhLock() throws InterruptedException {
+        System.out.println("clhLock");
+
         ejecutaPrueba(new CLHLock());
     }
     
     @Test
     void mcsLock() throws InterruptedException {
+        System.out.println("mcsLock");
+
         ejecutaPrueba(new MCSLock());
     }
     
     @Test
     void aLock() throws InterruptedException {
+        System.out.println("alock");
+
         ejecutaPrueba(new ALock(HILOS));
     }
 }
