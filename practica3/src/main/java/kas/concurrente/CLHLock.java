@@ -27,14 +27,17 @@ public class CLHLock implements Lock {
     
     @Override
     public void lock() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'lock'");
+        QNode qnode = myNode.get();
+        qnode.locked = true;
+        QNode pred = tail.getAndSet(qnode);
+        myPred.set(pred);
+        while (pred.locked) {} // Espera activamente hasta que el predecesor libere el bloqueo
     }
 
     @Override
     public void unlock() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'unlock'");
-    }
+        QNode qnode = myNode.get();
+        qnode.locked = false;
+        myNode.set(myPred.get());    }
     
 }
