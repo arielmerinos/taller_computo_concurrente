@@ -4,3 +4,6 @@ idea/
 *.log
 *.gz
 *.DS_Store
+.idea&
+practica3/target
+practica3/.idea

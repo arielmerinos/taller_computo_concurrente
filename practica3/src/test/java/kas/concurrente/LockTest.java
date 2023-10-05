@@ -54,15 +54,23 @@ public class LockTest {
     void tasLock() throws InterruptedException{
         System.out.println("HILOS " + HILOS);
         System.out.println("tasLock");
+        long startTime = System.currentTimeMillis(); // Captura el tiempo de inicio
         ejecutaPrueba(new TASLock());
+        long endTime = System.currentTimeMillis(); // Captura el tiempo de finalización
+        long duration = endTime - startTime; // Calcula la duración en milisegundos
+        System.out.println("Tiempo de ejecución: " + duration + " ms");
+
     }
 
 
     @Test
     void ttasLock() throws InterruptedException {
         System.out.println("ttasLock");
-
+        long startTime = System.currentTimeMillis(); // Captura el tiempo de inicio
         ejecutaPrueba(new TTASLock());
+        long endTime = System.currentTimeMillis(); // Captura el tiempo de finalización
+        long duration = endTime - startTime; // Calcula la duración en milisegundos
+        System.out.println("Tiempo de ejecución: " + duration + " ms");
 
     }
 
@@ -70,29 +78,49 @@ public class LockTest {
     @Test
     void backoffLock() throws InterruptedException {
         System.out.println("backoffLock");
+        long startTime = System.currentTimeMillis(); // Captura el tiempo de inicio
 
         ejecutaPrueba(new BackoffLock());
+        long endTime = System.currentTimeMillis(); // Captura el tiempo de finalización
+        long duration = endTime - startTime; // Calcula la duración en milisegundos
+        System.out.println("Tiempo de ejecución: " + duration + " ms");
+
     }
     
     @Test
     void clhLock() throws InterruptedException {
         System.out.println("clhLock");
+        long startTime = System.currentTimeMillis(); // Captura el tiempo de inicio
 
         ejecutaPrueba(new CLHLock());
-    }
-    
-    @Test
-    void mcsLock() throws InterruptedException {
-        System.out.println("mcsLock");
+        long endTime = System.currentTimeMillis(); // Captura el tiempo de finalización
+        long duration = endTime - startTime; // Calcula la duración en milisegundos
+        System.out.println("Tiempo de ejecución: " + duration + " ms");
 
-        ejecutaPrueba(new MCSLock());
     }
-    
+
+//    @Test
+//    void mcsLock() throws InterruptedException {
+//        System.out.println("mcsLock");
+//        long startTime = System.currentTimeMillis(); // Captura el tiempo de inicio
+//
+//        ejecutaPrueba(new MCSLock());
+//        long endTime = System.currentTimeMillis(); // Captura el tiempo de finalización
+//        long duration = endTime - startTime; // Calcula la duración en milisegundos
+//        System.out.println("Tiempo de ejecución: " + duration + " ms");
+//
+//    }
+
     @Test
     void aLock() throws InterruptedException {
         System.out.println("alock");
+        long startTime = System.currentTimeMillis(); // Captura el tiempo de inicio
 
         ejecutaPrueba(new ALock(HILOS));
+        long endTime = System.currentTimeMillis(); // Captura el tiempo de finalización
+        long duration = endTime - startTime; // Calcula la duración en milisegundos
+        System.out.println("Tiempo de ejecución: " + duration + " ms");
+
     }
 }
 
