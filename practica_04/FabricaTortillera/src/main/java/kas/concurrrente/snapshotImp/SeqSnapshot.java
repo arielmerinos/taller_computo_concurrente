@@ -4,7 +4,8 @@ import kas.concurrrente.snapshot.Snapshot;
 
 public class SeqSnapshot<T> implements Snapshot<T> {
     private T[] aValue;
-
+    
+    @SuppressWarnings("unchecked")
     public SeqSnapshot(int capacity, T init){
         aValue = (T[]) new Object[capacity];
 
@@ -20,6 +21,7 @@ public class SeqSnapshot<T> implements Snapshot<T> {
         aValue[ID] = v;
     }
 
+    @SuppressWarnings("unchecked")
     @Override
     public synchronized T[] scan() {
         T[] result = (T[]) new Object[aValue.length];

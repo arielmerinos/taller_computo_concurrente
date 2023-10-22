@@ -13,6 +13,7 @@ import kas.concurrrente.stamped.StampedValue;
 public class SimpleSnapshot<T> implements Snapshot<T>{
     private StampedValue<T>[] aTable;
 
+    @SuppressWarnings("unchecked")
     public SimpleSnapshot(int capacity, T init) {
         aTable = (StampedValue<T>[]) new StampedValue[capacity];
 
@@ -29,6 +30,7 @@ public class SimpleSnapshot<T> implements Snapshot<T>{
         aTable[me] = newValue;
     }
 
+    @SuppressWarnings("unchecked")
     @Override
     public T[] scan() {
         StampedValue<T>[] oldCopy, newCopy;
@@ -51,6 +53,7 @@ public class SimpleSnapshot<T> implements Snapshot<T>{
      * Metodo que obtiene una copia de los valores del arreglo
      * @return La copia de los valores del arreglo
      */
+    @SuppressWarnings("unchecked")
     private StampedValue<T>[] collect(){
         StampedValue<T>[] copy = (StampedValue<T>[]) new StampedValue[aTable.length];
         for(int j = 0; j < aTable.length; j++){

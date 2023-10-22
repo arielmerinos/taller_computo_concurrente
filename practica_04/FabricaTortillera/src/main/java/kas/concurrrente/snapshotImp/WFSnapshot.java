@@ -1,11 +1,7 @@
 package kas.concurrrente.snapshotImp;
 
-import kas.concurrrente.lockImpl.PetersonLock;
 import kas.concurrrente.snapshot.Snapshot;
 import kas.concurrrente.stamped.StampedSnap;
-import kas.concurrrente.stamped.StampedValue;
-
-import java.util.Arrays;
 
 /**
  * Clase que implementa un Snapshot
@@ -13,7 +9,6 @@ import java.util.Arrays;
  * @version 1.0 
  */
 public class WFSnapshot<T> implements Snapshot<T>{
-    private final PetersonLock lock = new PetersonLock();
     private StampedSnap<T>[] aTable;
 
     /**
@@ -21,6 +16,7 @@ public class WFSnapshot<T> implements Snapshot<T>{
      * @param capacity La capacidad
      * @param init El valor de inicio por celda
      */
+    @SuppressWarnings("unchecked")
     public WFSnapshot(int capacity, T init){
         aTable = (StampedSnap<T>[]) new StampedSnap[capacity];
 
@@ -38,6 +34,7 @@ public class WFSnapshot<T> implements Snapshot<T>{
         aTable[id] = newValue;
     }
 
+    @SuppressWarnings("unchecked")
     @Override
     public T[] scan() {
         StampedSnap<T>[] oldCopy, newCopy;
@@ -68,6 +65,7 @@ public class WFSnapshot<T> implements Snapshot<T>{
      * Metodo que obtiene una copia de los valores del arreglo
      * @return La copia de los valores del arreglo
      */
+    @SuppressWarnings("unchecked")
     private StampedSnap<T>[] collect(){
         StampedSnap<T>[] copy = (StampedSnap<T>[]) new StampedSnap[aTable.length];
         for(int j = 0; j < aTable.length; j++){

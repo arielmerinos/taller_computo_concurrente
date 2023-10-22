@@ -1,6 +1,6 @@
 -------------------------------------------------------------------------------
 Test set: kas.concurrente.snapshotImp.WFSnapshotTest
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.026 s - in kas.concurrente.snapshotImp.WFSnapshotTest
-constructorTest  Time elapsed: 0 s
-ejecucionBasica  Time elapsed: 0.004 s
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 s - in kas.concurrente.snapshotImp.WFSnapshotTest
+constructorTest  Time elapsed: 0.009 s
+ejecucionBasica  Time elapsed: 0.001 s
