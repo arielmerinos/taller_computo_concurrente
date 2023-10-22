@@ -1,6 +1,5 @@
-package kas.concurrente.candadosImpl;
-
-import kas.concurrente.candado.Lock;
+package kas.concurrrente.lockImpl;
+import kas.concurrrente.lock.Lock;
 
 /**
  * Clase que implementa el candado usando el Legendario

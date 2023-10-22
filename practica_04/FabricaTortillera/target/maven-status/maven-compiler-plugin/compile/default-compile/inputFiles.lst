@@ -1,0 +1,9 @@
+/home/melissa/Desktop/ciencias/8voSemestre/cocncurrente/Practicas/taller_computo_concurrente/practica_04/FabricaTortillera/src/main/java/kas/concurrrente/Main.java
+/home/melissa/Desktop/ciencias/8voSemestre/cocncurrente/Practicas/taller_computo_concurrente/practica_04/FabricaTortillera/src/main/java/kas/concurrrente/snapshotImp/SimpleSnapshot.java
+/home/melissa/Desktop/ciencias/8voSemestre/cocncurrente/Practicas/taller_computo_concurrente/practica_04/FabricaTortillera/src/main/java/kas/concurrrente/lockImpl/PetersonLock.java
+/home/melissa/Desktop/ciencias/8voSemestre/cocncurrente/Practicas/taller_computo_concurrente/practica_04/FabricaTortillera/src/main/java/kas/concurrrente/snapshotImp/WFSnapshot.java
+/home/melissa/Desktop/ciencias/8voSemestre/cocncurrente/Practicas/taller_computo_concurrente/practica_04/FabricaTortillera/src/main/java/kas/concurrrente/snapshotImp/SeqSnapshot.java
+/home/melissa/Desktop/ciencias/8voSemestre/cocncurrente/Practicas/taller_computo_concurrente/practica_04/FabricaTortillera/src/main/java/kas/concurrrente/snapshot/Snapshot.java
+/home/melissa/Desktop/ciencias/8voSemestre/cocncurrente/Practicas/taller_computo_concurrente/practica_04/FabricaTortillera/src/main/java/kas/concurrrente/lock/Lock.java
+/home/melissa/Desktop/ciencias/8voSemestre/cocncurrente/Practicas/taller_computo_concurrente/practica_04/FabricaTortillera/src/main/java/kas/concurrrente/stamped/StampedValue.java
+/home/melissa/Desktop/ciencias/8voSemestre/cocncurrente/Practicas/taller_computo_concurrente/practica_04/FabricaTortillera/src/main/java/kas/concurrrente/stamped/StampedSnap.java

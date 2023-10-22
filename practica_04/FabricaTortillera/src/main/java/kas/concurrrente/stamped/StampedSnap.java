@@ -1,5 +1,7 @@
 package kas.concurrrente.stamped;
 
+import java.util.Date;
+
 /**
  * CLase que modela un StampedSnap
  * @author Kassandra Mirael
@@ -9,11 +11,14 @@ public class StampedSnap<T> {
     private long stamp;
     private T value;
     private T[] snap;
+    private Date timestamp;
+
 
     public StampedSnap(T value){
         this.stamp = 0;
         this.value = value;
         this.snap = null;
+        this.timestamp = new Date();
     }
 
     public StampedSnap(long label, T value, T[] snap){
@@ -44,5 +49,13 @@ public class StampedSnap<T> {
 
     public void setSnap(T[] snap){
         this.snap = snap;
+    }
+
+    public Date getTimestamp() {
+        return timestamp;
+    }
+
+    public void setTimestamp(Date timestamp) {
+        this.timestamp = timestamp;
     }
 }

@@ -37,6 +37,7 @@ public class WFSnapshotTest {
     
     @BeforeEach
     void setUp(){
+        initHilos();
         snap = new WFSnapshot<>(capacidad, 1);
     }
 
