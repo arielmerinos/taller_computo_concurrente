@@ -11,8 +11,16 @@ import kas.concurrrente.stamped.StampedValue;
  * @version 1.0
  */
 public class SimpleSnapshot<T> implements Snapshot<T>{
+    /*
+     * Guarda el arreglo de valores con sus respectivos sellos de tiempo
+     */
     private StampedValue<T>[] aTable;
 
+    /**
+     * Metodo constructor
+     * @param capacity La capacidad
+     * @param init El valor de inicio por celda
+     */
     @SuppressWarnings("unchecked")
     public SimpleSnapshot(int capacity, T init) {
         aTable = (StampedValue<T>[]) new StampedValue[capacity];
@@ -22,6 +30,11 @@ public class SimpleSnapshot<T> implements Snapshot<T>{
         }
     }
 
+    /**
+     * Metodo que escribe el valor v en el registro
+     * del proceso que realiza la llamada
+     * @param value La variable a escribir en el arreglo
+     */
     @Override
     public void update(T value) {
         int me = Integer.parseInt(Thread.currentThread().getName());

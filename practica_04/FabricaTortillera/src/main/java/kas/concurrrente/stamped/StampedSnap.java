@@ -8,9 +8,21 @@ import java.util.Date;
  * @version 1.0
  */
 public class StampedSnap<T> {
+    /*
+     * Guarda el selo temporal
+     */
     private long stamp;
+    /*
+     * Guarda el valor genérico
+     */
     private T value;
+    /*
+     * Guarda el arreglo de valores
+     */
     private T[] snap;
+    /*
+     * Guarda el timestamp, útil para generar una marca de tiempo
+     */
     private Date timestamp;
 
 
