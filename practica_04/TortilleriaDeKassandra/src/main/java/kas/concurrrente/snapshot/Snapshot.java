@@ -1,5 +1,7 @@
 package kas.concurrrente.snapshot;
 
+import java.util.List;
+
 /**
  * Interfaz que modela un Snapshot
  * @author Kassandra Mirael
@@ -18,5 +20,5 @@ public interface Snapshot<T> {
      * del arreglo de registros
      * @return El arreglo de registros
      */
-    public T[] scan();
+    public List<T> scan();
 }
